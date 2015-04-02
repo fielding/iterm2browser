@@ -1,0 +1,32 @@
+{
+  "name": "iterm2browser",
+  "version": "0.1.0",
+  "description": "Convert iterm color schemes to browser usable styles (css, json, less)",
+  "main": "./lib/convert.js",
+  "keywords": [
+    "ansi",
+    "terminal",
+    "termjs",
+    "css",
+    "iterm"
+  ],
+  "author": {
+    "name": "Sterling DeMille",
+    "email": "sterlingdemille+npm@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demille/iterm2browser.git"
+  },
+  "dependencies": {
+    "commander": "^2.6.0",
+    "hogan": "^1.0.2",
+    "plist": "0.4.3",
+    "request": "^2.53.0",
+    "underscore": "1.4.4"
+  },
+  "bin": {
+    "iterm2browser": "cli.js"
+  }
+}

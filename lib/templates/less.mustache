@@ -1,0 +1,40 @@
+{{#prefix}}
+@{{prefix}}fg:            "{{ c.foreground }}";
+@{{prefix}}bg:            "{{ c.background }}";
+@{{prefix}}black:         "{{ c.palette.0 }}";
+@{{prefix}}red:           "{{ c.palette.1 }}";
+@{{prefix}}green:         "{{ c.palette.2 }}";
+@{{prefix}}yellow:        "{{ c.palette.3 }}";
+@{{prefix}}blue:          "{{ c.palette.4 }}";
+@{{prefix}}magenta:       "{{ c.palette.5 }}";
+@{{prefix}}cyan:          "{{ c.palette.6 }}";
+@{{prefix}}white:         "{{ c.palette.7 }}";
+@{{prefix}}brightBlack:   "{{ c.palette.8 }}";
+@{{prefix}}brightRed:     "{{ c.palette.9 }}";
+@{{prefix}}brightGreen:   "{{ c.palette.10 }}";
+@{{prefix}}brightYellow:  "{{ c.palette.11 }}";
+@{{prefix}}brightBlue:    "{{ c.palette.12 }}";
+@{{prefix}}brightMagenta: "{{ c.palette.13 }}";
+@{{prefix}}brightCyan:    "{{ c.palette.14 }}";
+@{{prefix}}brightWhite:   "{{ c.palette.15 }}";
+{{/prefix}}
+{{^prefix}}
+@fg:            "{{ c.foreground }}";
+@bg:            "{{ c.background }}";
+@black:         "{{ c.palette.0 }}";
+@red:           "{{ c.palette.1 }}";
+@green:         "{{ c.palette.2 }}";
+@yellow:        "{{ c.palette.3 }}";
+@blue:          "{{ c.palette.4 }}";
+@magenta:       "{{ c.palette.5 }}";
+@cyan:          "{{ c.palette.6 }}";
+@white:         "{{ c.palette.7 }}";
+@brightBlack:   "{{ c.palette.8 }}";
+@brightRed:     "{{ c.palette.9 }}";
+@brightGreen:   "{{ c.palette.10 }}";
+@brightYellow:  "{{ c.palette.11 }}";
+@brightBlue:    "{{ c.palette.12 }}";
+@brightMagenta: "{{ c.palette.13 }}";
+@brightCyan:    "{{ c.palette.14 }}";
+@brightWhite:   "{{ c.palette.15 }}";
+{{/prefix}}

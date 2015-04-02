@@ -1,0 +1,192 @@
+{{#prefix}}
+/* TERM.JS STYLES: {{ prefix }} */
+
+{{ prefix }} .fg {color: {{  c.foreground }};}
+{{ prefix }} div[style*=";color: rgb(240, 240, 240);"] {
+  color: {{  c.foreground }} !important;
+}
+{{ prefix }} .bg {background-color: {{  c.background }};}
+{{ prefix }} div[style*="background-color: rgb(0, 0, 0);"] {
+  background-color: {{  c.background }} !important;
+}
+{{ prefix }} .terminal-cursor {
+  color: {{  c.foreground }};
+  background-color: {{  c.background }};
+}
+{{ prefix }} ::-moz-selection {
+  color: {{ c.selected_text }};
+  background: {{ c.selection }};
+}
+{{ prefix }} ::selection {
+  color: {{ c.selected_text }};
+  background: {{ c.selection }};
+}
+
+/* FG COLORS */
+{{ prefix }} span[style*=";color:#2e3436;"] {color: {{ c.palette.0 }} !important;}
+{{ prefix }} span[style*=";color:#cc0000;"] {color: {{ c.palette.1 }} !important;}
+{{ prefix }} span[style*=";color:#4e9a06;"] {color: {{ c.palette.2 }} !important;}
+{{ prefix }} span[style*=";color:#c4a000;"] {color: {{ c.palette.3 }} !important;}
+{{ prefix }} span[style*=";color:#3465a4;"] {color: {{ c.palette.4 }} !important;}
+{{ prefix }} span[style*=";color:#75507b;"] {color: {{ c.palette.5 }} !important;}
+{{ prefix }} span[style*=";color:#06989a;"] {color: {{ c.palette.6 }} !important;}
+{{ prefix }} span[style*=";color:#d3d7cf;"] {color: {{ c.palette.7 }} !important;}
+
+/* FG BRIGHT COLORS */
+{{ prefix }} span[style*=";color:#555753;"] {color: {{ c.palette.8 }} !important;}
+{{ prefix }} span[style*=";color:#ef2929;"] {color: {{ c.palette.9 }} !important;}
+{{ prefix }} span[style*=";color:#8ae234;"] {color: {{ c.palette.10 }} !important;}
+{{ prefix }} span[style*=";color:#fce94f;"] {color: {{ c.palette.11 }} !important;}
+{{ prefix }} span[style*=";color:#729fcf;"] {color: {{ c.palette.12 }} !important;}
+{{ prefix }} span[style*=";color:#ad7fa8;"] {color: {{ c.palette.13 }} !important;}
+{{ prefix }} span[style*=";color:#34e2e2;"] {color: {{ c.palette.14 }} !important;}
+{{ prefix }} span[style*=";color:#eeeeec;"] {color: {{ c.palette.15 }} !important;}
+
+/* BG COLORS */
+{{ prefix }} span[style*="background-color:#2e3436;"] {
+    background-color: {{ c.palette.0 }} !important;
+}
+{{ prefix }} span[style*="background-color:#cc0000;"] {
+    background-color: {{ c.palette.1 }} !important;
+}
+{{ prefix }} span[style*="background-color:#4e9a06;"] {
+    background-color: {{ c.palette.2 }} !important;
+}
+{{ prefix }} span[style*="background-color:#c4a000;"] {
+    background-color: {{ c.palette.3 }} !important;
+}
+{{ prefix }} span[style*="background-color:#3465a4;"] {
+    background-color: {{ c.palette.4 }} !important;
+}
+{{ prefix }} span[style*="background-color:#75507b;"] {
+    background-color: {{ c.palette.5 }} !important;
+}
+{{ prefix }} span[style*="background-color:#06989a;"] {
+    background-color: {{ c.palette.6 }} !important;
+}
+{{ prefix }} span[style*="background-color:#d3d7cf;"] {
+    background-color: {{ c.palette.7 }} !important;
+}
+
+/* BG BRIGHT COLORS */
+{{ prefix }} span[style*="background-color:#555753;"] {
+    background-color: {{ c.palette.8 }} !important;
+}
+{{ prefix }} span[style*="background-color:#ef2929;"] {
+    background-color: {{ c.palette.9 }} !important;
+}
+{{ prefix }} span[style*="background-color:#8ae234;"] {
+    background-color: {{ c.palette.10 }} !important;
+}
+{{ prefix }} span[style*="background-color:#fce94f;"] {
+    background-color: {{ c.palette.11 }} !important;
+}
+{{ prefix }} span[style*="background-color:#729fcf;"] {
+    background-color: {{ c.palette.12 }} !important;
+}
+{{ prefix }} span[style*="background-color:#ad7fa8;"] {
+    background-color: {{ c.palette.13 }} !important;
+}
+{{ prefix }} span[style*="background-color:#34e2e2;"] {
+    background-color: {{ c.palette.14 }} !important;
+}
+{{ prefix }} span[style*="background-color:#eeeeec;"] {
+    background-color: {{ c.palette.15 }} !important;
+}
+{{/prefix}}
+
+{{^prefix}}
+/* TERM.JS STYLES */
+.fg {color: {{  c.foreground }};}
+div[style*=";color: rgb(240, 240, 240);"] {
+  color: {{  c.foreground }} !important;
+}
+.bg {background-color: {{  c.background }};}
+div[style*="background-color: rgb(0, 0, 0);"] {
+  background-color: {{  c.background }} !important;
+}
+.terminal-cursor {
+  color: {{  c.foreground }};
+  background-color: {{  c.background }};
+}
+::-moz-selection {
+  color: {{ c.selected_text }};
+  background: {{ c.selection }};
+}
+::selection {
+  color: {{ c.selected_text }};
+  background: {{ c.selection }};
+}
+
+/* FG COLORS */
+span[style*=";color:#2e3436;"] {color: {{ c.palette.0 }} !important;}
+span[style*=";color:#cc0000;"] {color: {{ c.palette.1 }} !important;}
+span[style*=";color:#4e9a06;"] {color: {{ c.palette.2 }} !important;}
+span[style*=";color:#c4a000;"] {color: {{ c.palette.3 }} !important;}
+span[style*=";color:#3465a4;"] {color: {{ c.palette.4 }} !important;}
+span[style*=";color:#75507b;"] {color: {{ c.palette.5 }} !important;}
+span[style*=";color:#06989a;"] {color: {{ c.palette.6 }} !important;}
+span[style*=";color:#d3d7cf;"] {color: {{ c.palette.7 }} !important;}
+
+/* FG BRIGHT COLORS */
+span[style*=";color:#555753;"] {color: {{ c.palette.8 }} !important;}
+span[style*=";color:#ef2929;"] {color: {{ c.palette.9 }} !important;}
+span[style*=";color:#8ae234;"] {color: {{ c.palette.10 }} !important;}
+span[style*=";color:#fce94f;"] {color: {{ c.palette.11 }} !important;}
+span[style*=";color:#729fcf;"] {color: {{ c.palette.12 }} !important;}
+span[style*=";color:#ad7fa8;"] {color: {{ c.palette.13 }} !important;}
+span[style*=";color:#34e2e2;"] {color: {{ c.palette.14 }} !important;}
+span[style*=";color:#eeeeec;"] {color: {{ c.palette.15 }} !important;}
+
+/* BG COLORS */
+span[style*="background-color:#2e3436;"] {
+    background-color: {{ c.palette.0 }} !important;
+}
+span[style*="background-color:#cc0000;"] {
+    background-color: {{ c.palette.1 }} !important;
+}
+span[style*="background-color:#4e9a06;"] {
+    background-color: {{ c.palette.2 }} !important;
+}
+span[style*="background-color:#c4a000;"] {
+    background-color: {{ c.palette.3 }} !important;
+}
+span[style*="background-color:#3465a4;"] {
+    background-color: {{ c.palette.4 }} !important;
+}
+span[style*="background-color:#75507b;"] {
+    background-color: {{ c.palette.5 }} !important;
+}
+span[style*="background-color:#06989a;"] {
+    background-color: {{ c.palette.6 }} !important;
+}
+span[style*="background-color:#d3d7cf;"] {
+    background-color: {{ c.palette.7 }} !important;
+}
+
+/* BG BRIGHT COLORS */
+span[style*="background-color:#555753;"] {
+    background-color: {{ c.palette.8 }} !important;
+}
+span[style*="background-color:#ef2929;"] {
+    background-color: {{ c.palette.9 }} !important;
+}
+span[style*="background-color:#8ae234;"] {
+    background-color: {{ c.palette.10 }} !important;
+}
+span[style*="background-color:#fce94f;"] {
+    background-color: {{ c.palette.11 }} !important;
+}
+span[style*="background-color:#729fcf;"] {
+    background-color: {{ c.palette.12 }} !important;
+}
+span[style*="background-color:#ad7fa8;"] {
+    background-color: {{ c.palette.13 }} !important;
+}
+span[style*="background-color:#34e2e2;"] {
+    background-color: {{ c.palette.14 }} !important;
+}
+span[style*="background-color:#eeeeec;"] {
+    background-color: {{ c.palette.15 }} !important;
+}
+{{/prefix}}

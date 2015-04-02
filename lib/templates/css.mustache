@@ -1,0 +1,95 @@
+{{#prefix}}
+/* ANSI STYLES: {{ prefix }} */
+{{ prefix }} .fg                     {color: {{  c.foreground }};}
+{{ prefix }} .bg                     {background-color: {{  c.background }};}
+{{ prefix }} ::-moz-selection        {color: {{ c.selected_text }}; background: {{ c.selection }};}
+{{ prefix }} ::selection             {color: {{ c.selected_text }}; background: {{ c.selection }};}
+
+/* FG COLORS */
+{{ prefix }} .ansi-black-fg          {color: {{ c.palette.0 }};}
+{{ prefix }} .ansi-red-fg            {color: {{ c.palette.1 }};}
+{{ prefix }} .ansi-green-fg          {color: {{ c.palette.2 }};}
+{{ prefix }} .ansi-yellow-fg         {color: {{ c.palette.3 }};}
+{{ prefix }} .ansi-blue-fg           {color: {{ c.palette.4 }};}
+{{ prefix }} .ansi-magenta-fg        {color: {{ c.palette.5 }};}
+{{ prefix }} .ansi-cyan-fg           {color: {{ c.palette.6 }};}
+{{ prefix }} .ansi-white-fg          {color: {{ c.palette.7 }};}
+
+/* FG BRIGHT COLORS */
+{{ prefix }} .ansi-bright-black-fg   {color: {{ c.palette.8 }};}
+{{ prefix }} .ansi-bright-red-fg     {color: {{ c.palette.9 }};}
+{{ prefix }} .ansi-bright-green-fg   {color: {{ c.palette.10 }};}
+{{ prefix }} .ansi-bright-yellow-fg  {color: {{ c.palette.11 }};}
+{{ prefix }} .ansi-bright-blue-fg    {color: {{ c.palette.12 }};}
+{{ prefix }} .ansi-bright-magenta-fg {color: {{ c.palette.13 }};}
+{{ prefix }} .ansi-bright-cyan-fg    {color: {{ c.palette.14 }};}
+{{ prefix }} .ansi-bright-white-fg   {color: {{ c.palette.15 }};}
+
+/* BG COLORS */
+{{ prefix }} .ansi-black-bg          {background-color: {{ c.palette.0 }};}
+{{ prefix }} .ansi-red-bg            {background-color: {{ c.palette.1 }};}
+{{ prefix }} .ansi-green-bg          {background-color: {{ c.palette.2 }};}
+{{ prefix }} .ansi-yellow-bg         {background-color: {{ c.palette.3 }};}
+{{ prefix }} .ansi-blue-bg           {background-color: {{ c.palette.4 }};}
+{{ prefix }} .ansi-magenta-bg        {background-color: {{ c.palette.5 }};}
+{{ prefix }} .ansi-cyan-bg           {background-color: {{ c.palette.6 }};}
+{{ prefix }} .ansi-white-bg          {background-color: {{ c.palette.7 }};}
+
+/* BG BRIGHT COLORS */
+{{ prefix }} .ansi-bright-black-bg   {background-color: {{ c.palette.8 }};}
+{{ prefix }} .ansi-bright-red-bg     {background-color: {{ c.palette.9 }};}
+{{ prefix }} .ansi-bright-green-bg   {background-color: {{ c.palette.10 }};}
+{{ prefix }} .ansi-bright-yellow-bg  {background-color: {{ c.palette.11 }};}
+{{ prefix }} .ansi-bright-blue-bg    {background-color: {{ c.palette.12 }};}
+{{ prefix }} .ansi-bright-magenta-bg {background-color: {{ c.palette.13 }};}
+{{ prefix }} .ansi-bright-cyan-bg    {background-color: {{ c.palette.14 }};}
+{{ prefix }} .ansi-bright-white-bg   {background-color: {{ c.palette.15 }};}
+{{/prefix}}
+
+{{^prefix}}
+/* ANSI STYLES */
+.fg                     {color: {{  c.foreground }};}
+.bg                     {background-color: {{  c.background }};}
+::-moz-selection        {color: {{ c.selected_text }}; background: {{ c.selection }};}
+::selection             {color: {{ c.selected_text }}; background: {{ c.selection }};}
+
+/* FG COLORS */
+.ansi-black-fg          {color: {{ c.palette.0 }};}
+.ansi-red-fg            {color: {{ c.palette.1 }};}
+.ansi-green-fg          {color: {{ c.palette.2 }};}
+.ansi-yellow-fg         {color: {{ c.palette.3 }};}
+.ansi-blue-fg           {color: {{ c.palette.4 }};}
+.ansi-magenta-fg        {color: {{ c.palette.5 }};}
+.ansi-cyan-fg           {color: {{ c.palette.6 }};}
+.ansi-white-fg          {color: {{ c.palette.7 }};}
+
+/* FG BRIGHT COLORS */
+.ansi-bright-black-fg   {color: {{ c.palette.8 }};}
+.ansi-bright-red-fg     {color: {{ c.palette.9 }};}
+.ansi-bright-green-fg   {color: {{ c.palette.10 }};}
+.ansi-bright-yellow-fg  {color: {{ c.palette.11 }};}
+.ansi-bright-blue-fg    {color: {{ c.palette.12 }};}
+.ansi-bright-magenta-fg {color: {{ c.palette.13 }};}
+.ansi-bright-cyan-fg    {color: {{ c.palette.14 }};}
+.ansi-bright-white-fg   {color: {{ c.palette.15 }};}
+
+/* BG COLORS */
+.ansi-black-bg          {background-color: {{ c.palette.0 }};}
+.ansi-red-bg            {background-color: {{ c.palette.1 }};}
+.ansi-green-bg          {background-color: {{ c.palette.2 }};}
+.ansi-yellow-bg         {background-color: {{ c.palette.3 }};}
+.ansi-blue-bg           {background-color: {{ c.palette.4 }};}
+.ansi-magenta-bg        {background-color: {{ c.palette.5 }};}
+.ansi-cyan-bg           {background-color: {{ c.palette.6 }};}
+.ansi-white-bg          {background-color: {{ c.palette.7 }};}
+
+/* BG BRIGHT COLORS */
+.ansi-bright-black-bg   {background-color: {{ c.palette.8 }};}
+.ansi-bright-red-bg     {background-color: {{ c.palette.9 }};}
+.ansi-bright-green-bg   {background-color: {{ c.palette.10 }};}
+.ansi-bright-yellow-bg  {background-color: {{ c.palette.11 }};}
+.ansi-bright-blue-bg    {background-color: {{ c.palette.12 }};}
+.ansi-bright-magenta-bg {background-color: {{ c.palette.13 }};}
+.ansi-bright-cyan-bg    {background-color: {{ c.palette.14 }};}
+.ansi-bright-white-bg   {background-color: {{ c.palette.15 }};}
+{{/prefix}}
