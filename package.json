@@ -1,6 +1,6 @@
 {
   "name": "iterm2browser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert iterm color schemes to browser usable styles (css, json, less)",
   "main": "./lib/convert.js",
   "keywords": [
