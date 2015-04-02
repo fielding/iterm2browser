@@ -8,6 +8,11 @@ iterm2browser is basically a wrapper around [iterm-colors](https://www.npmjs.com
 
 You can find some converted styles [here](https://github.com/demille/ansi-browser-styles) with a [demo](https://demille.github.io/ansi-browser-styles) of them in action.
 
+### Install
+```
+npm install -g iterm2browser
+```
+
 ### Usage
 
 ```
